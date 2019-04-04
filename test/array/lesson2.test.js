@@ -9,3 +9,9 @@ test('cardGroup:[1,1,1,2,2,2,3,3]', () => {
 test('cardGroup:[1,1,2,2,2,2]', () => {
   expect(cardGroup([1, 1, 2, 2, 2, 2])).toBe(true)
 })
+test('cardGroup:[1,2,3]', () => {
+  expect(cardGroup([1, 2, 3])).toBe(false)
+})
+test('cardGroup:[1]', () => {
+  expect(cardGroup([1])).toBe(false)
+})
